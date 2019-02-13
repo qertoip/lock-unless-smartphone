@@ -1,0 +1,9 @@
+# Symlink this file to appear in /usr/lib/systemd/system/
+
+[Unit]
+Description=Lock screen unless smartphone is connected over USB
+
+[Service]
+ExecStart=/home/qertoip/Programs/lock-unless-smartphone/lock-unless-smartphone
+StandardOutput=file:/var/log/lock-unless-smartphone.log
+StandardError=file:/var/log/lock-unless-smartphone.log

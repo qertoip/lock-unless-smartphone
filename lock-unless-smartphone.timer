@@ -1,0 +1,11 @@
+# Symlink this file to appear in /usr/lib/systemd/system/
+
+[Unit]
+Description=Timer for lock-unless-smartphone
+
+[Timer]
+OnCalendar=*:*:0/4
+AccuracySec=1us
+
+[Install]
+WantedBy=timers.target
